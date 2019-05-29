@@ -24,19 +24,19 @@
                                 @endif
 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="name" id="name" placeholder="Your Name">
+                                    <input type="text" class="form-control" name="name" id="name" placeholder="Your Name" value="{{old('name')}}">
                                     @if ($errors->has('name'))
                                     <small class="text-danger">{{$errors->first('name')}}</small>
                                     @endif
                                 </div> 
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="email" id="email" placeholder="Your E-mail">
+                                    <input type="text" class="form-control" name="email" id="email" placeholder="Your E-mail" value="{{old('email')}}">
                                     @if ($errors->has('email'))
                                     <small class="text-danger">{{$errors->first('email')}}</small>
                                     @endif
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="pincode" id="pincode" placeholder="Your Pincode">
+                                    <input type="text" class="form-control" name="pincode" id="pincode" placeholder="Your Pincode" value={{old('pincode')}}>
                                     @if ($errors->has('pincode'))
                                     <small class="text-danger">{{$errors->first('pincode')}}</small>
                                     @endif

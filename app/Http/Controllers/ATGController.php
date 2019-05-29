@@ -42,7 +42,7 @@ class ATGController extends Controller
     {
         request()->validate([
             'name'          =>      'required|regex:/^[a-zA-Z]+/|max:255',
-            'email'         =>      'required|email|max:255|unique:users',
+            'email'         =>      'required|email|max:255|unique:users|regex:/^[a-zA-Z]+/',
             'pincode'       =>      'required|digits:6|integer',
         ]);
 

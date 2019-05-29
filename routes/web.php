@@ -11,10 +11,10 @@
 |
 */
 
-Route::get('/atg', function () {
+Route::get('/', function () {
     return view('atg-landing');
 });
 
-Route::get('atg/create', 'ATGController@index');
+Route::get('create', 'ATGController@index');
 
 Route::resource('atg', 'ATGController');
